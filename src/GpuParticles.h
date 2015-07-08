@@ -82,6 +82,8 @@ namespace itg
         ofShader& getUpdateShaderRef() { return updateShader; }
         ofShader& getDrawShaderRef() { return drawShader; }
         
+        ofFbo& getReadFboRef() { return fbos[currentReadFbo]; }
+        
     private:
         void texturedQuad(float x, float y, float width, float height, float s, float t);
         void setUniforms(ofShader& shader);
