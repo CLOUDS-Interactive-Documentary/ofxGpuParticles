@@ -122,7 +122,7 @@ namespace itg
         {
             ostringstream oss;
             oss << UNIFORM_PREFIX << ofToString(i);
-            shader.setUniformTexture(oss.str().c_str(), fbos[currentReadFbo].getTextureReference(i), i + textureLocation);
+            shader.setUniformTexture(oss.str().c_str(), fbos[currentReadFbo].getTextureReference(i), (i + textureLocation + 1));
         }
     }
     
